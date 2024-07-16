@@ -1,4 +1,5 @@
 import "./App.css";
+import {List} from "./components/List";
 import {TabSwitcher} from "./components/Tab";
 
 function App() {
@@ -14,6 +15,13 @@ function App() {
 
 				<TabSwitcher.TabPenal whenActive={1}>
 					<div>Show tab penal 1</div>
+					<div>
+						<List>
+							<List.Item>1</List.Item>
+							<List.Item>2</List.Item>
+							<List.Item>3</List.Item>
+						</List>
+					</div>
 				</TabSwitcher.TabPenal>
 				<TabSwitcher.TabPenal whenActive={2}>
 					<div>Show tab penal 2</div>
